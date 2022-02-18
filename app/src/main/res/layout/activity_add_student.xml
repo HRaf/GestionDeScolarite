@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent">
+
+
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_rounds_nosolid"
+        android:drawableLeft="@drawable/ic_programs_colored"
+        android:ems="10"
+        android:hint=" Last name"
+        android:padding="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_program"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_rounds_nosolid"
+        android:drawableLeft="@drawable/ic_programs_colored"
+        android:ems="10"
+        android:hint=" First name"
+        android:padding="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/lname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cne"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_rounds_nosolid"
+        android:drawableLeft="@drawable/ic_programs_colored"
+        android:ems="10"
+        android:hint=" Cne"
+        android:padding="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/fname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="324dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/edit_rounds"
+        android:text="ADD"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+        android:id="@+id/spinner_program"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_rounds_nosolid"
+        android:drawableLeft="@drawable/ic_programs_colored"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/ic_programs_colored"
+        android:background="@drawable/edit_rounds_nosolid"
+        app:layout_constraintBottom_toTopOf="@+id/addbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

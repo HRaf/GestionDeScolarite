@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:layout_width="wrap_content">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+
+
+
+
+        <item
+            android:id="@+id/nav_create_client"
+            android:title="Student"
+            android:icon="@drawable/person_add"/>
+
+
+        <item
+            android:id="@+id/modules"
+            android:title="Modules"
+            android:icon="@drawable/list"/>
+        <item
+            android:id="@+id/programs"
+            android:title="Programs"
+            android:icon="@drawable/list"/>
+
+
+
+
+
+    </group>
+
+
+
+
+    <item
+        android:title="Tools">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_calendar"
+                    android:title="Calendar"
+                    android:icon="@drawable/ic_calendar"/>
+
+            </group>
+        </menu>
+
+    </item>
+
+
+
+    <item android:title="By ACHRAF BATTIWA"
+        android:enabled="false"></item>
+</menu>

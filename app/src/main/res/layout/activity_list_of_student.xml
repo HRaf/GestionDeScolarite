@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ListOfStudent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="horizontal"
+            >
+        <Spinner
+        android:id="@+id/spinner_program"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/edit_rounds_nosolid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+        <Spinner
+            android:id="@+id/spinner_level"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/edit_rounds_nosolid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/filterbtn"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:text="GO"
+                >
+
+            </Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:id="@+id/rv_student"
+
+        />
+    <Button
+        android:id="@+id/addstudentbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="30sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+
+        >
+
+    </Button>
+
+</LinearLayout>
