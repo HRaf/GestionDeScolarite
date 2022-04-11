@@ -15,6 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+//add module class
 public class AddModule extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner spinner,spinner_program;
     EditText moduletitle;
