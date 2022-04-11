@@ -15,7 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-//add module class : The user can add new module
+//add module class : The user can add new module - Mon 11 April
 public class AddModule extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner spinner,spinner_program;
     EditText moduletitle;
